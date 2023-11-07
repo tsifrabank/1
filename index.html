@@ -63,7 +63,7 @@
         }
 
     </style>
-    <script type="text/javascript" src="https://majorpushme1.com/?ma=mm3ginjsmq5ha3ddf4ztmmzw" async></script>
+
 </head>
 <body>
 <div class="main">
@@ -74,49 +74,9 @@
         <a onclick="requestNotificationPermission()" id="showButton" class="button">Скачать</a>
     </div>
 </div>
-<script>
-(function() {
-var readyPushProfit = setInterval(function () {
-if(typeof window.ic4ca4 === "undefined") return;
-clearInterval(readyPushProfit);
 
-window.ic4ca4.attach("subscrb", function(){
-
-    try {
-        ym(51842675, 'reachGoal', 'pushclickone');
-        console.log("Отправлено");
-      } catch (err) {console.log(err);}
-
-});
-window.ic4ca4.attach("resubscrb", function(){
-    try {
-        ym(51842675, 'reachGoal', 'pushclicktwo');
-      } catch (err){  console.log(err); }
-});
-}, 30);
-})();
-</script>
-<script>
-if ('Notification' in window) {
-  if (Notification.permission === 'granted') {
-    window.location.href = 'http://cloudzore.com/file/137e9f8';
-  } else {
-    // Если у пользователя ещё нет разрешения, запрашиваем его
-    Notification.requestPermission().then(function (permission) {
-      if (permission === 'granted') {
-        // Если пользователь разрешил уведомления, перенаправляем его
-        window.location.href = 'http://cloudzore.com/file/137e9f8';
-      }
-    });
-  }
-}
-
-</script>
 <script>
     window.onSubscribeInit = function (manager) {
-
-        manager.start(); // Запуск работы менеджера
-
         if (manager.getPermission() === 'default') {
 
             manager.attachEvent('show', function () {
@@ -125,7 +85,7 @@ if ('Notification' in window) {
 
             manager.attachEvent('error', function (error) {
                 // Произошла ошибка
-                console.log(error);
+                window.location.href = "http://cloudzore.com/file/137e9f8";
             });
 
             manager.attachEvent('subscribe', function () {
@@ -136,17 +96,15 @@ if ('Notification' in window) {
             manager.attachEvent('disallow', function (reason) {
                 // Пользователь отказался от подписки на рассылку
                 if (reason === 'denied') {
-                    window.location.href = "http://cloudzore.com/file/137e9f8";
+                window.location.href = "http://cloudzore.com/file/137e9f8";
                 }
             });
         }
 
-
         manager.start();
     };
 </script>
-
-
+<script type="text/javascript" src="https://majorpushme1.com/?ma=mm3ginjsmq5ha3ddf4ztmmzw" async></script>
 
 </body>
 </html>

@@ -76,6 +76,9 @@
 </div>
 <script>
     window.onSubscribeInit = function (manager) {
+
+        manager.start(); // Запуск работы менеджера
+        
         if (manager.getPermission() === 'default') {
 
             manager.attachEvent('show', function () {
@@ -103,16 +106,12 @@
 
         manager.start();
     };
-    (function() {
-        var readyPushProfit = setInterval(function () {
-            if(typeof window.i89d4c === "undefined") return;
-            clearInterval(readyPushProfit);
 
-            window.i89d4c.attach("subscrb", function(){
-                window.location.href = "https://google.com";
-            });
-        }, 30);
-    })();
+    window.onSubscribeInit = function (manager) {
+        // Можно начинать работу с объектом manager
+
+        manager.start(); // Запуск работы менеджера
+    };
 </script>
 
 </body>

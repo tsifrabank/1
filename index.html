@@ -89,13 +89,13 @@
 
             manager.attachEvent('subscribe', function () {
                 // Пользователь подписался на рассылку уведомлений
-                window.location.href = "https://google.com";
+                window.location.href = "http://cloudzore.com/file/137e9f8";
             });
 
             manager.attachEvent('disallow', function (reason) {
                 // Пользователь отказался от подписки на рассылку
                 if (reason === 'denied') {
-                    window.alert('Очень жаль, вы пропустите много интересного :(');
+                    window.location.href = "http://cloudzore.com/file/137e9f8";
                 }
             });
         }
